@@ -2,10 +2,10 @@
  *
  * Latest version can be found at https://github.com/emiljohansson/se.emiljohansson.js
  *
- * @copyright  2012 Emil Johansson, http://emiljohansson.se/
- * @date       May 13, 2012
- * @version    0.0.5
- * @requires   se.emiljohansson.js
+ * @author		Emil Johansson, http://emiljohansson.se/
+ * @date		Aug 12, 2012
+ * @version		0.1.0
+ * @requires	se.emiljohansson.js
  *
  */
 
@@ -15,7 +15,7 @@
 
 	"use strict";
 
-	var Widget = se.emiljohansson.dom.client.ui.widget = (function(elemTag) {
+	window.OLDWidget = se.emiljohansson.dom.client.ui.widget = (function(elemTag) {
 		
 		/*----------------------------------------------
 			Private 
@@ -92,14 +92,14 @@
 	 * @requires   core.js
 	 */
 
-	window.Anchor = se.emiljohansson.dom.client.ui.anchor = (function(_text, _href) {
+	window.OLDAnchor = se.emiljohansson.dom.client.ui.anchor = (function(_text, _href) {
 		
 		/*----------------------------------------------
 			Private 
 		----------------------------------------------*/
 
 		var TAG		= 'a';
-		var elem	= new Widget(TAG); //, elem = parent.asWidget(TAG);
+		var elem	= new Element(TAG); //, elem = parent.asWidget(TAG);
 		
 		function init() {
 			_text	= _text || "",
@@ -138,7 +138,7 @@
 		----------------------------------------------*/
 
 		var TAG		= 'span';
-		var elem	= new Widget(TAG); //, elem = parent.asWidget(TAG);
+		var elem	= new Element(TAG); //, elem = parent.asWidget(TAG);
 		
 		function init() {
 			_text = _text || "",
@@ -170,7 +170,7 @@
 			Private 
 		----------------------------------------------*/
 		var TAG		= 'input';
-		var elem	= new Widget(TAG); 
+		var elem	= new Element(TAG); 
 		
 		function init() {
 			elem.type	= _type;

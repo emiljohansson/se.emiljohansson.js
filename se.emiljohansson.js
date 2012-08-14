@@ -11,6 +11,8 @@
  * @example    
  */
 
+var se = se || {};
+
 /*jslint browser: true, devel:true, jquery:true, nomen: true, vars: true */
 /*global defined */
 (function() {
@@ -18,8 +20,8 @@
 	"use strict";
 
 	//Initializes the namespaces
-	var se							= se || {};
 	se.emiljohansson				= {};
+	se.emiljohansson.ui				= {};
 	se.emiljohansson.dom			= {};
 	se.emiljohansson.dom.client		= {};
 	se.emiljohansson.dom.client.ui	= {};
